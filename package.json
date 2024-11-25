@@ -1,0 +1,37 @@
+{
+  "name": "meu-projeto-tailwind",
+  "version": "1.0.0",
+  "description": "Projeto que usa Tailwind CSS para criar UI modernas e responsivas com plugins de interação e design",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "scripts": {
+    "build": "tailwindcss build src/assets/css/styles.css -o dist/styles.css",
+    "dev": "npm run build",
+    "start": "npm run build",
+    "build:production": "NODE_ENV=production tailwindcss build src/assets/css/styles.css -o dist/styles.css"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.15",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.11.17",
+    "lucide": "^0.460.0",
+    "meu-projeto-tailwind": "file:",
+    "preline": "^2.5.1",
+    "tailwind-merge": "^2.5.4",
+    "tailwind-scrollbar": "^3.1.0",
+    "tailwindcss-neumorphism": "^0.1.0",
+    "tailwindcss-transitions": "^2.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^3.4.15"
+  }
+}

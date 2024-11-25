@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sitemap para LSG Digital -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Página inicial -->
+    <url>
+        <loc>https://lsgdigital.com.br/</loc>
+        <lastmod>2024-09-01</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Página exemplo -->
+    <url>
+        <loc>https://lsgdigital.com.br/pagina-exemplo/</loc>
+        <lastmod>2024-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Página de serviços -->
+    <url>
+        <loc>https://lsgdigital.com.br/servicos/</loc>
+        <lastmod>2024-09-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Depoimentos -->
+    <url>
+        <loc>https://lsgdigital.com.br/depoimentos/</loc>
+        <lastmod>2024-09-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Página de contato -->
+    <url>
+        <loc>https://lsgdigital.com.br/contato/</loc>
+        <lastmod>2024-09-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Blog -->
+    <url>
+        <loc>https://lsgdigital.com.br/blog/</loc>
+        <lastmod>2024-09-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Página de serviços detalhados -->
+    <url>
+        <loc>https://lsgdigital.com.br/servicos/marketing-digital/</loc>
+        <lastmod>2024-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Página sobre nós -->
+    <url>
+        <loc>https://lsgdigital.com.br/sobre-nos/</loc>
+        <lastmod>2024-09-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Página de portfólio -->
+    <url>
+        <loc>https://lsgdigital.com.br/portfolio/</loc>
+        <lastmod>2024-09-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Página de FAQ -->
+    <url>
+        <loc>https://lsgdigital.com.br/faq/</loc>
+        <lastmod>2024-09-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+</urlset>

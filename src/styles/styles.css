@@ -1,0 +1,308 @@
+/* src/styles.css */
+
+@import 'animate.css'; /* Importa o pacote animate.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html {
+    background-color: #FAFAFA; /* Cor de fundo para modo claro */
+    color: #131415; /* Cor do texto para modo claro */
+  }
+
+  .dark {
+    background-color: #131313; /* Cor de fundo para modo escuro */
+    color: #FAFAFA; /* Cor do texto para modo escuro */
+  }
+
+  a {
+    color: #fa6400; /* Cor do link no modo claro */
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  h1, h2, h3 {
+    color: #070707; /* Cor dos títulos */
+  }
+}
+
+/* Estilo do botão para o WhatsApp */
+.whatsapp-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px; /* Arredondamento dos cantos */
+  border: 2px solid #f96400; /* Cor da borda (laranja do site) */
+  background-color: #f96400; /* Cor de fundo inicial (laranja do site) */
+  color: white; /* Cor do texto */
+  cursor: pointer; /* Aponta que é clicável */
+  transition: all 0.3s ease; /* Transição suave para os efeitos de hover e focus */
+  margin-top: 1rem;
+}
+
+.whatsapp-btn:hover {
+  background-color: transparent; /* Torna o fundo transparente ao passar o mouse */
+  color: #25d366; /* Cor do texto ao passar o mouse (verde do WhatsApp) */
+  border-color: #25d366; /* Mantém a cor da borda verde do WhatsApp no hover */
+}
+
+.whatsapp-btn:focus {
+  outline: none; /* Remove o contorno padrão de foco */
+  box-shadow: 0 0 0 4px rgba(37, 211, 102, 0.4); /* Sombra suave de foco verde */
+}
+
+.whatsapp-btn:active {
+  background-color: #128c7e; /* Cor de fundo mais escura (verde do WhatsApp escuro) quando clicado */
+  border-color: #128c7e; /* Borda mais escura ao clicar */
+}
+
+/* Estilo do botão para o link */
+.whatsapp-saiba-mais {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px; /* Arredondamento dos cantos */
+  border: 2px solid #f96400; /* Cor da borda (laranja do site) */
+  background-color: #f96400; /* Cor de fundo inicial (laranja do site) */
+  color: white; /* Cor do texto */
+  cursor: pointer; /* Aponta que é clicável */
+  transition: all 0.3s ease; /* Transição suave para os efeitos de hover e focus */
+  margin-top: 1rem;
+}
+
+.whatsapp-saiba-mais:hover {
+  background-color: transparent; /* Torna o fundo transparente ao passar o mouse */
+  color: #25d366; /* Cor do texto ao passar o mouse (verde do WhatsApp) */
+  border-color: #25d366; /* Mantém a cor da borda verde do WhatsApp no hover */
+}
+
+.whatsapp-saiba-mais:focus {
+  outline: none; /* Remove o contorno padrão de foco */
+  box-shadow: 0 0 0 4px rgba(37, 211, 102, 0.4); /* Sombra suave de foco verde */
+}
+
+.whatsapp-saiba-mais:active {
+  background-color: #128c7e; /* Cor de fundo mais escura (verde do WhatsApp escuro) quando clicado */
+  border-color: #128c7e; /* Borda mais escura ao clicar */
+}
+
+
+/* Estilo para as imagens */
+.brand-img {
+  transition: transform 0.3s ease, filter 0.3s ease; /* Transição suave para o efeito de hover */
+  cursor: pointer; /* Indica que as imagens são clicáveis */
+  width: 100%; /* Ajusta o tamanho das imagens conforme o tamanho do contêiner */
+  max-width: 150px; /* Limita a largura máxima das imagens */
+  object-fit: cover; /* Garante que as imagens cubram o espaço sem distorcer */
+}
+
+/* Efeito de hover: diminui o tamanho da imagem */
+.brand-img:hover {
+  transform: scale(0.9); /* Diminui o tamanho da imagem */
+  filter: brightness(0.8); /* Escurece a imagem ao passar o mouse */
+}
+
+
+/* Efeito ao passar o mouse */
+.brand-img:hover {
+  transform: scale(1.1); /* Aumenta a imagem quando o mouse passa sobre ela */
+  filter: grayscale(0%) brightness(1); /* Remove o filtro preto e branco e restaura o brilho normal */
+}
+.bg-indigo-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(247 73 0);
+}
+
+.text-blue-600 {
+    --tw-text-opacity: 1;
+    color: rgb(238 66 7);
+}
+
+.nav a {
+  position: relative; /* Necessário para a linha abaixo */
+  padding-bottom: 4px; /* Espaço para a linha */
+  transition: color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+/* Efeito de linha laranja animada */
+.nav a::after {
+  content: ''; /* Adiciona o conteúdo vazio que representará a linha */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; /* Inicia com a linha invisível */
+  height: 2px; /* Altura da linha */
+  background-color: rgb(247 73 0); /* Cor da linha */
+  transition: width 0.3s ease; /* Animação de expansão da linha */
+}
+
+/* Quando o link é hover (passa o mouse por cima) */
+.nav a:hover::after {
+  width: 100%; /* Expande a linha até o tamanho do link */
+}
+
+/* Indicador para o link ativo (a página atual) */
+.nav a.active::after {
+  width: 100%; /* A linha fica totalmente visível para o link ativo */
+}
+
+
+#cookies-with-stacked-buttons {
+  position: fixed; /* Fixa o modal na tela */
+  bottom: 0;
+  right: 0;
+  left: 0; /* Para que fique centralizado na tela */
+  margin: auto;
+  width: 100%; /* Largura completa */
+  max-width: 500px; /* Tamanho máximo para a tela */
+  padding: 16px; /* Espaçamento interno */
+  z-index: 9999; /* Coloca o modal na frente de outros elementos */
+  display: none; /* Inicialmente oculto */
+  animation: slide-up 0.5s ease-out; /* Animação para subir o modal */
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%); /* Começa fora da tela */
+  }
+  to {
+    transform: translateY(0); /* Fica no lugar */
+  }
+}
+
+#cookies-with-stacked-buttons.show {
+  display: block; /* Exibe o modal quando necessário */
+}
+
+.fixed {
+  position: fixed;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+footer a {
+  transition: color 0.3s ease;
+}
+
+/* Links das categorias e menus */
+footer a.text-gray-400 {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+footer a.text-gray-400:hover {
+  color: #fa6400; /* Cor de destaque (azul indigo) */
+}
+
+/* Ícones das redes sociais */
+footer .flex a svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: fill 0.3s ease;
+}
+
+footer .flex a:hover svg {
+  fill: #fa6400;
+}
+
+/* Diminui a altura do vídeo */
+
+
+  /* From Uiverse.io by mobinkakei */ 
+.cta {
+  display: flex;
+  padding: 11px 33px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  background: #2C2C2CFF;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #fa6400;
+}
+
+.cta .second {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover .second {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+.span {
+  transform: skewX(15deg);
+}
+
+.second {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 12%;
+}
+
+.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.cta:hover .three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover .one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover .two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: #fa6400;
+  }
+
+  100% {
+    fill: white;
+  }
+}

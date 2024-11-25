@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtd/cross-domain-policy.dtd">
+<!--
+    Este arquivo XML define a política de acesso para domínios cruzados (cross-domain).
+    Ele permite que domínios específicos acessem os recursos do servidor. 
+    Esse tipo de arquivo é comumente utilizado por aplicativos como o Adobe Flash.
+
+    Se você não estiver usando Flash ou outro sistema que precise dessa política,
+    pode ser desnecessário manter este arquivo no seu servidor.
+-->
+<cross-domain-policy>
+    <!--
+        Permite acesso ao conteúdo do servidor pelo domínio lsgdigital.com.br.
+        Este é o domínio principal autorizado a acessar os dados do servidor.
+    -->
+    <allow-access-from domain="lsgdigital.com.br" />
+
+    <!--
+        Para permitir que outro domínio acesse os recursos, descomente a linha abaixo
+        e substitua "outrodominio.com.br" pelo domínio desejado.
+    -->
+    <!-- <allow-access-from domain="outrodominio.com.br" /> -->
+
+    <!--
+        Se você deseja permitir acesso de qualquer domínio, descomente a linha abaixo.
+        *IMPORTANTE*: Isso pode representar um risco de segurança, pois qualquer site poderá acessar seus dados.
+        Recomenda-se usar essa configuração apenas para desenvolvimento e nunca em produção.
+    -->
+    <!-- <allow-access-from domain="*" /> -->
+</cross-domain-policy>
