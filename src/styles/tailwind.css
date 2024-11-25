@@ -15,7 +15,7 @@
   /* Estilos para o modo escuro */
   .dark {
     background-color: #131313; /* Cor de fundo do modo escuro */
-    color: #FFFFFF; /* Cor do texto no modo escuro */
+    color: #ffebe5; /* Cor do texto no modo escuro */
   }
 
   /* Estilos para links */
@@ -33,7 +33,7 @@
   /* Definições do corpo da página */
   body {
     font-family: 'Roboto', sans-serif;
-    background-color: #FFFFFF; /* Cor de fundo clara */
+    background-color: #ffebe5; /* Cor de fundo clara */
     margin: 0;
     padding: 0;
   }
@@ -159,7 +159,7 @@ footer .social-icons a:hover {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  background-color: #FFFFFF;
+  background-color: #ffebe5;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
