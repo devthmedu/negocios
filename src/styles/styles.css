@@ -7,30 +7,6 @@
 @tailwind utilities;
 
 
-@layer base {
-  html {
-    background-color: #FAFAFA; /* Cor de fundo para modo claro */
-    color: #131415; /* Cor do texto para modo claro */
-  }
-
-  .dark {
-    background-color: #131313; /* Cor de fundo para modo escuro */
-    color: #FAFAFA; /* Cor do texto para modo escuro */
-  }
-
-  a {
-    color: #fa6400; /* Cor do link no modo claro */
-  }
-
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
-
-  h1, h2, h3 {
-    color: #070707; /* Cor dos títulos */
-  }
-}
-
 /* Estilo do botão para o WhatsApp */
 .whatsapp-btn {
   display: inline-block;
