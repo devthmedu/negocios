@@ -59,7 +59,7 @@
 
         /* Efeito ao passar o mouse (hover) */
         .wpp-btn:hover {
-            background-color: #128c7e; /* Cor do WhatsApp quando passar o mouse */
+            background-color: #25d366; /* Cor do WhatsApp quando passar o mouse */
             transform: scale(1.1); /* Efeito de aumento */
         }
 
@@ -540,7 +540,7 @@ a.group:hover svg {
 .title {
   font-size: 32px; /* Tamanho maior para o título */
   font-weight: bold;
-  color: #ff9800;
+  color: #f96400;
   animation: textIn 0.7s ease-out forwards; /* Animação para o título aparecer */
 }
 
@@ -558,12 +558,12 @@ a.group:hover svg {
 }
 
 .highlight {
-  color: #ff9800; /* Destaque para "diagnóstico gratuito" */
+  color: #f96400; /* Destaque para "diagnóstico gratuito" */
   font-weight: bold;
 }
 
 .price {
-  color: #e91e63; /* Cor de destaque para o valor */
+  color: #bc0000; /* Cor de destaque para o valor */
   font-weight: bold;
 }
 
@@ -574,7 +574,7 @@ a.group:hover svg {
 .close-btn,
 .get-btn {
   padding: 10px 20px;
-  background-color: #ff9800;
+  background-color: #f96400;
   color: white;
   border: none;
   border-radius: 5px;
@@ -585,7 +585,7 @@ a.group:hover svg {
 
 .close-btn:hover,
 .get-btn:hover {
-  background-color: #e68900; /* Cor um pouco mais escura ao passar o mouse */
+  background-color: #000000; /* Cor um pouco mais escura ao passar o mouse */
 }
 
 .get-btn {
@@ -607,3 +607,5 @@ a.group:hover svg {
     transform: translateY(0);
   }
 }
+
+
