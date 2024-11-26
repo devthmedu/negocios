@@ -3,10 +3,52 @@
 # top-most EditorConfig file
 root = true
 
+# Global settings for all file types
 [*]
-indent_style = space
-indent_size = 1
-end_of_line = lf
-charset = utf-8
-trim_trailing_whitespace = false
-insert_final_newline = false
+indent_style = space            # Use spaces for indentation (instead of tabs)
+indent_size = 4                 # 4 spaces per indent level
+end_of_line = lf                # Use LF (Line Feed) for line endings (Linux/Mac style)
+charset = utf-8                 # Files should be encoded in UTF-8
+trim_trailing_whitespace = true # Remove any trailing spaces at the end of lines
+insert_final_newline = true     # Ensure there is a newline at the end of each file
+
+# Specific settings for JavaScript files
+[*.js]
+indent_size = 2                 # 2 spaces for indentation in JavaScript files
+quote_type = double             # Prefer double quotes for strings in JavaScript
+
+# Specific settings for HTML files
+[*.html]
+indent_size = 2                 # 2 spaces for indentation in HTML files
+max_line_length = 120           # Maximum line length for HTML files
+insert_final_newline = true     # Ensure there is a newline at the end of the HTML file
+
+# Specific settings for CSS files
+[*.css]
+indent_size = 2                 # 2 spaces for indentation in CSS files
+trim_trailing_whitespace = true # Ensure trailing whitespaces are removed from CSS files
+
+# Specific settings for JSON files
+[*.json]
+indent_size = 2                 # 2 spaces for indentation in JSON files
+charset = utf-8                 # Ensure JSON files are UTF-8 encoded
+
+# Specific settings for Markdown files
+[*.md]
+trim_trailing_whitespace = true # Ensure trailing whitespaces are removed from Markdown files
+insert_final_newline = true     # Ensure there is a newline at the end of Markdown files
+
+# Specific settings for YAML files
+[*.yml]
+indent_size = 2                 # 2 spaces for indentation in YAML files
+trim_trailing_whitespace = true # Remove trailing whitespaces from YAML files
+
+# Specific settings for Python files
+[*.py]
+indent_size = 4                 # 4 spaces for indentation in Python files (PEP8 convention)
+max_line_length = 79            # Limit lines to 79 characters per PEP8
+
+# Specific settings for shell scripts
+[*.sh]
+indent_size = 2                 # 2 spaces for indentation in shell scripts
+end_of_line = lf                # Use LF for line endings
