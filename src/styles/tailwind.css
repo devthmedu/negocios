@@ -8,188 +8,160 @@
 @layer base {
   /* Definições globais */
   html {
-    color: #131415; /* Cor do texto padrão */
-    scroll-behavior: smooth; /* Suaviza o scroll da página */
+    color: #131415;
+    scroll-behavior: smooth;
   }
 
-  /* Estilos para o modo escuro */
   .dark {
-    background-color: #131313; /* Cor de fundo do modo escuro */
-    color: #ffebe5; /* Cor do texto no modo escuro */
+    background-color: #131313;
+    color: #ffebe5;
   }
 
-  /* Estilos para links */
-  a {
-    color: #ff781e; /* Cor dos links */
-    text-decoration: none; /* Remove o sublinhado nos links */
-    transition: color 0.3s ease; /* Transição suave para a mudança de cor */
-  }
-
-  /* Estilos para quando o mouse passa sobre os links */
-  a:hover {
-    color: #fdb922; /* Cor do link ao passar o mouse */
-  }
-
-  /* Definições do corpo da página */
   body {
     font-family: 'Roboto', sans-serif;
-    background-color: #ffebe5; /* Cor de fundo clara */
+    background-color: #ffebe5;
     margin: 0;
     padding: 0;
   }
 
-  /* Estilo para títulos principais */
+  a {
+    color: #ff781e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: #fdb922;
+  }
+
   h1, h2, h3 {
-    color: #070707; /* Cor para títulos principais */
+    color: #070707;
     font-weight: 600;
   }
 
-  /* Estilo para subtítulos */
   h4, h5, h6 {
-    color: #4a4a4a; /* Cor para títulos menores */
+    color: #4a4a4a;
     font-weight: 500;
   }
 
-  /* Estilo de texto para parágrafos */
   p {
-    color: #555555; /* Cor do texto nos parágrafos */
-    line-height: 1.6; /* Distância entre linhas */
-    margin-bottom: 1rem; /* Espaçamento entre parágrafos */
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
   }
 
-  /* Estilos para listas */
   ul, ol {
     color: #555555;
     padding-left: 1.5rem;
   }
 
-  /* Estilo para os links de rodapé */
-  footer a {
-    color: rgba(255, 255, 255, 0.6);
+  img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    max-width: 100%;
+    height: auto;
+  }
+
+  img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+  }
+}
+
+@layer components {
+  /* Botões personalizados */
+  .button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: #ff781e;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+  }
+
+  .button:hover {
+    background-color: #fdb922;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 120, 30, 0.4);
+  }
+
+  .button:active {
+    background-color: #e7690f;
+  }
+
+  /* Navegação */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #ffebe5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar a {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #070707;
     transition: color 0.3s ease;
   }
 
-  footer a:hover {
-    color: #ff781e; /* Cor de destaque para links do rodapé */
+  .navbar a:hover {
+    color: #ff781e;
+  }
+
+  /* Modal */
+  #modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #modal.show {
+    display: flex;
+  }
+
+  #modal .content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    animation: slide-up 0.5s ease-out;
+  }
+
+  #modal .close-btn {
+    background-color: #ff781e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #modal .close-btn:hover {
+    background-color: #fdb922;
   }
 }
 
-/* Estilos para botões personalizados */
-.button {
-  display: inline-block;
-  padding: 12px 24px;
-  font-size: 1rem;
-  font-weight: 500;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 8px;
-  background-color: #ff781e;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-top: 1rem;
-}
-
-/* Efeito de hover para botões */
-.button:hover {
-  background-color: #fdb922; /* Cor do botão ao passar o mouse */
-  transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
-}
-
-/* Estilo do botão quando estiver em foco */
-.button:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px rgba(255, 120, 30, 0.4); /* Sombra suave ao focar */
-}
-
-/* Estilo do botão quando pressionado */
-.button:active {
-  background-color: #e7690f; /* Cor de fundo mais escura ao clicar */
-}
-
-/* Estilo de texto para links internos */
-.navbar a {
-  text-transform: uppercase; /* Deixa o texto em maiúsculo */
-  font-weight: 600;
-  color: #070707;
-  transition: color 0.3s ease;
-}
-
-/* Efeito de hover para links da navegação */
-.navbar a:hover {
-  color: #ff781e; /* Cor de destaque ao passar o mouse */
-}
-
-/* Efeito de transição suave nas imagens */
-img {
-  transition: transform 0.3s ease, filter 0.3s ease;
-  max-width: 100%;
-  height: auto;
-}
-
-/* Efeito de hover nas imagens */
-img:hover {
-  transform: scale(1.1); /* Aumenta a imagem */
-  filter: brightness(1.1); /* Aumenta o brilho */
-}
-
-/* Estilo para a área do rodapé */
-footer {
-  background-color: #131313;
-  padding: 2rem;
-  text-align: center;
-  color: white;
-}
-
-footer .social-icons a {
-  margin: 0 1rem;
-  transition: transform 0.3s ease;
-}
-
-/* Efeito de hover para ícones sociais */
-footer .social-icons a:hover {
-  transform: scale(1.1);
-  color: #ff781e; /* Cor de destaque para ícones sociais */
-}
-
-/* Efeito de transição nos links da navegação */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  background-color: #ffebe5;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo do modal (cookies, etc.) */
-#modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-#modal.show {
-  display: flex;
-}
-
-#modal .content {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 8px;
-  width: 80%;
-  max-width: 500px;
-  text-align: center;
-}
-
-/* Animação suave para o modal */
 @keyframes slide-up {
   from {
     opacity: 0;
@@ -201,42 +173,33 @@ footer .social-icons a:hover {
   }
 }
 
-/* Aplicação da animação para mostrar o modal */
-#modal.show .content {
-  animation: slide-up 0.5s ease-out;
-}
+@layer utilities {
+  /* Estilos do rodapé */
+  footer {
+    background-color: #1f1f1f;
+    padding: 3rem;
+    color: white;
+    text-align: center;
+  }
 
-/* Estilo do botão de fechar modal */
-#modal .close-btn {
-  background-color: #ff781e;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+  footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
 
-#modal .close-btn:hover {
-  background-color: #fdb922;
-}
+  footer a:hover {
+    color: #ff781e;
+  }
 
-/* Estilos de transição para o rodapé */
-footer {
-  background-color: #1f1f1f;
-  padding: 3rem;
-  color: white;
-  text-align: center;
-}
+  footer .social-icons a {
+    margin: 0 1rem;
+    transition: transform 0.3s ease;
+  }
 
-footer a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 1rem;
-  transition: color 0.3s ease;
+  footer .social-icons a:hover {
+    transform: scale(1.1);
+    color: #ff781e;
+  }
 }
-
-footer a:hover {
-  color: #ff781e; /* Cor de destaque no hover */
-}
-
