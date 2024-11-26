@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/          # Se houver uma área administrativa que você deseja bloquear
+Disallow: /login/          # Se houver uma área de login que você deseja bloquear
+Disallow: /private/        # Outros diretórios privados
+
+Sitemap: https://devthm.site/sitemap.xml  # URL do sitemap XML
