@@ -28,6 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (currentCount > 0) {
       notificationCount.textContent = currentCount + 1; // Aumenta a contagem de notificações
     }
-  }, 5000); // A cada 5 segundos, a contagem de notificações será aumentada
+  }, 10000); // A cada 5 segundos, a contagem de notificações será aumentada
 
 });
