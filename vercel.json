@@ -2,19 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "src/styles/styles.css",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "src/assets/images/*",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "src/assets/videos/*",
+      "src": "dist/**/*",
       "use": "@vercel/static"
     }
   ],

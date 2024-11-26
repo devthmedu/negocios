@@ -1,6 +1,7 @@
 module.exports = {
-  content: [
-    './src/**/*.{html,js}', // Ajuste conforme a estrutura do seu projeto
+ content: [
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx,html}', // Caminho dos arquivos que usarão o Tailwind
   ],
   darkMode: 'class', // Modo escuro ativado via classe
 
