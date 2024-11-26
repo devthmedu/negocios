@@ -608,4 +608,9 @@ a.group:hover svg {
   }
 }
 
-
+/* Esconde o botão em telas menores que 768px */
+@media (max-width: 768px) {
+  .cta {
+    display: none;
+  }
+}
