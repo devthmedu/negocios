@@ -39,6 +39,13 @@
   color: white;  /* Texto em branco para contrastar com a imagem */
 }
 
+/* Esconde o botão em telas menores que 768px */
+@media (max-width: 768px) {
+  .cta {
+    display: none;
+  }
+}
+
 /* Adicionando sobreposição (overlay) */
 .section-with-background::before {
   content: '';
