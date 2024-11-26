@@ -13,10 +13,10 @@
   <title>Acessoria LSG Digital - Soluções Inovadoras para Presença Digital</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" href="/assets/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" href="../img/favicon.png" sizes="32x32">
+  <link rel="icon" href="../img/favicon.png" sizes="16x16">
   <link rel="apple-touch-icon" href="/assets/apple-icon-180x180.png">
-  <link rel="icon" href="/assets/android-icon-192x192.png" sizes="192x192">
+  <link rel="icon" href="../img/favicon.png" sizes="192x192">
 
   <!-- CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -29,56 +29,58 @@
   <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet">
 
   <style>
-    /* From Uiverse.io by mobinkakei */ 
-.cta {
-  display: flex;
-  padding: 11px 33px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  background: #2C2C2CFF;
-  transition: 1s;
-  box-shadow: 6px 6px 0 black;
-  transform: skewX(-15deg);
-  border: none;
-  cursor: pointer;
-}
+    /* From Uiverse.io by mobinkakei */
+    .cta {
+      display: flex;
+      padding: 11px 33px;
+      text-decoration: none;
+      font-size: 25px;
+      color: white;
+      background: #2C2C2CFF;
+      transition: 1s;
+      box-shadow: 6px 6px 0 black;
+      transform: skewX(-15deg);
+      border: none;
+      cursor: pointer;
+    }
 
-.cta:focus {
-  outline: none;
-}
+    .cta:focus {
+      outline: none;
+    }
 
-.cta:hover {
-  transition: 0.5s;
-  box-shadow: 10px 10px 0 #fa6400;
-}
+    .cta:hover {
+      transition: 0.5s;
+      box-shadow: 10px 10px 0 #fa6400;
+    }
 
-.cta .second {
-  transition: 0.5s;
-  margin-right: 0px;
-}
+    .cta .second {
+      transition: 0.5s;
+      margin-right: 0px;
+    }
 
-.cta:hover .second {
-  transition: 0.5s;
-  margin-right: 45px;
-}
- /* Imagem de fundo do Body */
+    .cta:hover .second {
+      transition: 0.5s;
+      margin-right: 45px;
+    }
+
+    /* Imagem de fundo do Body */
     body {
       background-size: cover;
       color: white;
     }
   </style>
 </head>
-<body class="bg-black">
+
+<body>
   <section class="relative flex flex-wrap lg:h-screen lg:items-center">
     <!-- Formulário de Brinde -->
     <div class="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
       <div class="mx-auto max-w-lg text-center">
-        <h1 class="text-2xl font-bold sm:text-3xl text-gray-100">🎁 Parabéns, Você Ganhou um Brinde!</h1>
+        <h1 class="text-2xl font-bold sm:text-3xl text-gray-900">🎁 Parabéns, Você Ganhou um Brinde!</h1>
         <p class="mt-4 text-gray-500 text-lg">Preencha os campos abaixo para garantir o seu diagnóstico gratuito no valor de R$ 399,90. Após o envio, entraremos em contato por e-mail para agendar o seu brinde!</p>
       </div>
 
-      <form action="https://formsubmit.co/thmedu@outlook.com?redirect=https://seusite.com/pagina-de-confirmacao" method="POST" class="mx-auto mb-0 mt-8 max-w-md space-y-6">
+      <form id="brinde-form" action="https://formsubmit.co/thmedu@outlook.com?redirect=https://seusite.com/pagina-de-confirmacao" method="POST" class="mx-auto mb-0 mt-8 max-w-md space-y-6">
         <!-- Campo para Nome Completo -->
         <div>
           <label for="name" class="sr-only">Nome Completo</label>
@@ -146,7 +148,7 @@
         alt="Imagem de Brinde"
         src="../../img/fundos/5.jpeg"
         class="absolute inset-0 h-full w-full object-cover rounded-lg shadow-xl"
-      />/
+      />
     </div>
   </section>
 
@@ -192,7 +194,7 @@
     // Manipulador de envio do formulário
     const form = document.getElementById("brinde-form");
     const successModal = document.getElementById("success-modal");
-    const formContainer = document.getElementById("form-container");
+    const formContainer = document.querySelector("section");
 
     form.addEventListener("submit", function(event) {
       event.preventDefault(); // Impede o envio real para o servidor para simulação da confirmação
@@ -219,3 +221,5 @@
     }
   </script>
 </body>
+
+</html>

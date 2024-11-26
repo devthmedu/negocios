@@ -8,15 +8,16 @@
   <meta name="keywords" content="acessoria digital, soluções digitais, marketing online, presença digital, consultoria digital, transformação digital, SEO, design web, marketing digital">
   <meta name="author" content="LSG Digital">
   <meta name="msapplication-TileImage" content="/assets/ms-icon-144x144.png">
-  <meta name="msapplication-TileColor" content="##FFFFFF">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
   
   <title>Acessoria LSG Digital - Soluções Inovadoras para Presença Digital</title>
 
+ 
   <!-- Favicon -->
-  <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" href="/assets/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" href="../img/favicon.png" sizes="32x32">
+  <link rel="icon" href="../img/favicon.png" sizes="16x16">
   <link rel="apple-touch-icon" href="/assets/apple-icon-180x180.png">
-  <link rel="icon" href="/assets/android-icon-192x192.png" sizes="192x192">
+  <link rel="icon" href="../img/favicon.png" sizes="192x192">
 
   <!-- CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -27,275 +28,250 @@
   <link href="../styles/styles.css" rel="stylesheet">
   <link href="../styles/tailwind.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet">
-<style>
-/* Estilo da seção com fundo de imagem */
-.section-with-background {
-  position: relative;
-  background-image: url('../img/fundos/9.jpeg'); /* Substitua pelo caminho da sua imagem */
-  background-size: cover;  /* Faz com que a imagem cubra toda a área */
-  background-position: center center;  /* Centraliza a imagem */
-  background-repeat: no-repeat;  /* Evita a repetição da imagem */
-  padding-bottom: 80px;  /* Ajuste para dar um pouco de espaço no final */
-  color: white;  /* Garantir que o texto tenha contraste sobre a imagem */
-}
 
-/* Adicionando uma sobreposição (overlay) para opacidade na imagem de fundo */
-.section-with-background::before {
-  content: ''; /* Cria uma pseudo-elemento */
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3); /* Cor preta com 30% de opacidade */
-  z-index: 0; /* Coloca a sobreposição atrás do conteúdo */
-}
+  <style>
+    .section-with-background {
+      position: relative;
+      background-image: url('../img/fundos/9.jpeg');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      padding-bottom: 80px;
+      color: white;
+    }
 
-/* Ajuste o conteúdo para que fique acima do fundo */
-.content-wrapper {
-  position: relative;
-  z-index: 1; /* Garante que o conteúdo apareça acima da imagem e da sobreposição */
-}
+    .section-with-background::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
 
-/* Caso o texto precise de mais destaque */
-.text-white {
-  color: white !important; /* Garante que o texto seja branco mesmo que tenha outras classes de cor */
-}
+    .content-wrapper {
+      position: relative;
+      z-index: 1;
+    }
 
-  /* Alterando o fundo para o desejado */
-  .bg-gray-100 {
-    --tw-bg-opacity: 1;
-    background-color: #080808; /* Cor de fundo preta */
-  }
+    .text-white {
+      color: white !important;
+    }
 
+    .bg-gray-100 {
+      background-color: #080808;
+    }
 
-.bg-darck {
-  padding: 3rem; /* Diminui o padding dentro do container */
-}
+    .bg-darck {
+      padding: 3rem;
+    }
 
-/* Estilo do botão CTA */
-.cta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px 32px;
-  border-radius: 12px;
-  background-color: #ff5722;  /* Laranja mais forte */
-  color: #fff;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+    .cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 32px;
+      border-radius: 12px;
+      background-color: #ff5722;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
 
-.cta:hover {
-  background-color: #ff5722;  /* Laranja mais escuro ao passar o mouse */
-  transform: scale(1.05);  /* Leve aumento ao passar o mouse */
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);  /* Sombra mais intensa */
-}
+    .cta:hover {
+      background-color: #ff5722;
+      transform: scale(1.05);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
 
-.cta svg {
-  margin-left: 10px;
-  transition: transform 0.3s ease;
-}
+    .cta svg {
+      margin-left: 10px;
+      transition: transform 0.3s ease;
+    }
 
-.cta:hover svg {
-  transform: translateX(5px);  /* Desloca o ícone para a direita ao passar o mouse */
-}
+    .cta:hover svg {
+      transform: translateX(5px);
+    }
 
-/* Título */
-h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #1a202c;  /* Texto mais escuro */
-  line-height: 1.2;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
+    h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #1a202c;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
 
-/* Descrição */
-p {
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: #4a5568;  /* Cor de texto mais suave */
-  margin-bottom: 1.5rem;
-}
+    p {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: #4a5568;
+      margin-bottom: 1.5rem;
+    }
 
-/* Imagem */
-.image-container img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    .image-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-.image-container img:hover {
-  transform: scale(1.05);  /* Leve zoom na imagem ao passar o mouse */
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);  /* Sombra mais intensa */
-}
+    .image-container img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+    }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  h2 {
-    font-size: 2.5rem; /* Ajusta o tamanho do título em telas menores */
-  }
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 2.5rem;
+      }
 
-  .cta {
-    font-size: 1rem;  /* Ajusta o tamanho da fonte do botão */
-    padding: 12px 24px; /* Ajusta o padding */
-  }
-}
+      .cta {
+        font-size: 1rem;
+        padding: 12px 24px;
+      }
+    }
 
+    .tab-button {
+      display: block;
+      width: 100%;
+      padding: 12px 20px;
+      background-color: transparent;
+      border: 2px solid transparent;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #FFF;
+      text-align: left;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+    }
 
-/* Estilo geral para os botões das abas (tab-button) */
-.tab-button {
-  display: block;
-  width: 100%;  /* Faz o botão ocupar toda a largura disponível */
-  padding: 12px 20px;  /* Espaçamento interno */
-  background-color: transparent;  /* Fundo transparente */
-  border: 2px solid transparent;  /* Sem borda visível */
-  border-radius: 8px;  /* Bordas arredondadas */
-  font-size: 1rem;  /* Tamanho da fonte */
-  font-weight: 600;  /* Peso da fonte */
-  color: #FFF;  /* Cor do texto */
-  text-align: left;  /* Alinha o texto à esquerda */
-  transition: all 0.3s ease-in-out;  /* Transição suave */
-  cursor: pointer;  /* Aponta para o cursor como um botão */
-}
+    .tab-button[aria-selected="true"] {
+      background-color: #FA640000;
+      color: white;
+      border-color: #71717179;
+    }
 
-/* Estilo quando a aba está selecionada (ativa) */
-.tab-button[aria-selected="true"] {
-  background-color: #FA640000;  /* Cor de fundo ao selecionar */
-  color: white;  /* Cor do texto quando ativo */
-  border-color: #71717179;  /* Borda da aba selecionada */
-}
+    .tab-button:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      border-color: #FFFFFFFF;
+    }
 
-/* Estilo ao passar o mouse sobre a aba (hover) */
-.tab-button:hover {
-  background-color: rgba(0, 0, 0, 0.1);  /* Efeito de hover */
-  border-color: #FFFFFFFF;  /* Borda azul ao passar o mouse */
-}
+    .tab-button:focus {
+      outline: none;
+      border-color: #ff5722;
+      box-shadow: 0 0 0 2px #ff5722;
+    }
 
-/* Estilo ao focar em uma aba */
-.tab-button:focus {
-  outline: none;  /* Remove o contorno padrão */
-  border-color: #ff5722;  /* Borda azul ao focar */
-  box-shadow: 0 0 0 2px #ff5722;  /* Efeito de foco com sombra */
-}
+    .tab-button span {
+      display: block;
+      padding: 5px 0;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #ff5722;
+    }
 
-/* Estilo para o conteúdo de cada aba (tab-content) */
-.tab-button span {
-  display: block;
-  padding: 5px 0;
-  font-size: 1.1rem;  /* Tamanho de fonte do título da aba */
-  font-weight: 700;  /* Deixa o título da aba em negrito */
-  color: #ff5722;  /* Cor do título */
-}
+    .tab-button span + span {
+      font-size: 0.875rem;
+      color: #f4f4f4;
+      margin-top: 5px;
+    }
 
-/* Estilo para a descrição da aba (subtítulo) */
-.tab-button span + span {
-  font-size: 0.875rem;  /* Menor tamanho para o subtítulo */
-  color: #f4f4f4;  /* Cor mais suave para o subtítulo */
-  margin-top: 5px;
-}
+    .tab-button:disabled {
+      background-color: #f4f4f4;
+      color: #FFF;
+      cursor: not-allowed;
+      border-color: #ddd;
+    }
 
-/* Estilo quando a aba está desabilitada */
-.tab-button:disabled {
-  background-color: #f4f4f4;
-  color: #FFF;
-  cursor: not-allowed;
-  border-color: #ddd;
-}
+    .text-gray-800 {
+      color: rgb(253, 254, 255);
+    }
 
-  /* Cor do texto normal (branco) */
-  .text-gray-800 {
-    --tw-text-opacity: 1;
-    color: rgb(253, 254, 255); /* Branco */
-  }
+    .hover\:text-black:hover {
+      color: #000000 !important;
+    }
 
-  /* Efeito hover no texto para ficar preto */
-  .hover\:text-black:hover {
-    color: #000000 !important; /* Preto */
-  }
+    button:active .text-gray-800,
+    button:focus .text-gray-800 {
+      color: #EDE9E9FF !important;
+    }
 
-
-
-  /* Quando o botão estiver ativo */
-  button:active .text-gray-800,
-  button:focus .text-gray-800 {
-    color: #EDE9E9FF !important; /* Texto preto quando ativo ou focado */
-  }
-
-  /* Efeito para ícones do SVG quando o botão estiver ativo */
-  button:active svg,
-  button:focus svg {
-    stroke: #000000;  /* Altera a cor do ícone para preto quando o botão estiver ativo */
-  }
-
-
-
-</style>
+    button:active svg,
+    button:focus svg {
+      stroke: #000000;
+    }
+  </style>
 </head>
 
 
-<body class="bg-white text-black dark:bg-gray-900 dark:text-white">
-<!-- ========== HEADER ========== -->
-<header class="text-gray-400 bg-black body-font">
 
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white">
+
+<header class="text-gray-400 bg-black body-font">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80" href="../../public/index.html" aria-label="Preline">
-        <img src="../img/logo-clara.png" alt="Logo" class="dark:hidden w-24"> <!-- Logo para modo claro -->
-        <img src="../img/logo-clara.png" alt="Logo" class="hidden dark:block w-24"> <!-- Logo para modo escuro -->
+    <!-- Logo -->
+    <a class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80" href="../../index.html" aria-label="Preline">
+      <img src="../img/logo-clara.png" alt="Logo" class="dark:hidden w-24"> <!-- Logo para modo claro -->
+      <img src="../img/logo-clara.png" alt="Logo" class="hidden dark:block w-24"> <!-- Logo para modo escuro -->
     </a>
 
+    <!-- Navegação -->
     <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
       <a class="mr-5 hover:text-white" href="../pages/home.html">Sobre Nós</a>
-      <a class="mr-5 hover:text-white" href="#clientes"> Depoimentos</a>
+      <a class="mr-5 hover:text-white" href="#clientes">Depoimentos e Clientes </a>
       <a class="mr-5 hover:text-white" href="../../src/pages/servicos.html">Serviços</a>
     </nav>
 
-   
-        <button 
-         class="cta flex items-center justify-center px-6 py-6 rounded-lg bg-orange-600 text-white font-semibold hover:bg-orange-700 transition duration-300"
-         onclick="window.location.href='https://api.whatsapp.com/send/?phone=5519981331191&text&type=phone_number&app_absent=0'">
-        <span class="span text-sm mr-2"> Conversar AGORA</span>
-        <span class="second">
-          <svg
-            width="30px"
-            height="20px"
-            viewBox="0 0 66 43"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <path
-                class="one"
-                d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
-                fill="#FFFFFF"
-              ></path>
-              <path
-                class="two"
-                d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
-                fill="#FFFFFF"
-              ></path>
-              <path
-                class="three"
-                d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
-                fill="#FFFFFF"
-              ></path>
-            </g>
-          </svg>
-        </span>
-      </button>
+    <!-- Botão "CONVERSAR AGORA" visível apenas em telas maiores que md -->
+    <button 
+      class="cta hidden md:flex items-center justify-center px-6 py-6 rounded-lg bg-orange-600 text-white font-semibold hover:bg-orange-700 transition duration-300"
+      onclick="window.location.href='https://api.whatsapp.com/send/?phone=5519981331191&text&type=phone_number&app_absent=0'"
+      aria-label="Entrar em contato via WhatsApp">
+      <span class="span text-sm mr-2">CONVERSAR AGORA</span>
+      <span class="second">
+        <svg
+          width="30px"
+          height="20px"
+          viewBox="0 0 66 43"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <path
+              class="one"
+              d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+              fill="#FFFFFF"
+            ></path>
+            <path
+              class="two"
+              d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+              fill="#FFFFFF"
+            ></path>
+            <path
+              class="three"
+              d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+              fill="#FFFFFF"
+            ></path>
+          </g>
+        </svg>
+      </span>
+    </button>
   </div>
 </header>
-
-
 <!-- ========== FIM HEADER ========== -->
+
+
+<!-- ========== SECTION INICIAL ========== -->
 <section class="section-with-background">
- <div class="content-wrapper">
+  <div class="content-wrapper">
     <div class="max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
       <div class="relative">
         <div class="max-w-3xl text-center mx-auto">
@@ -327,7 +303,7 @@ p {
           <nav class="grid gap-6 mt-6 md:mt-10" aria-label="Depoimentos de Clientes" role="tablist" aria-orientation="vertical">
             <!-- Aba 1: Aumento nas Vendas -->
             <button type="button" class="tab-button text-start hover:bg-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:ring-opacity-50 p-5 md:p-6 rounded-xl transition-all duration-300 ease-in-out"
-                    id="tabs-with-card-item-1" aria-selected="true" data-hs-tab="#tabs-with-card-1" aria-controls="tabs-with-card-1" role="tab">
+                    id="tabs-with-card-item-1" aria-selected="true" data-hs-tab="#tabs-with-card-1" aria-controls="tabs-with-card-1" role="tab" onclick="toggleTab(1)">
               <span class="grow">
                 <span class="block text-lg font-semibold text-gray-800 hover:text-blue-600 transition-all duration-300 ease-in-out">Aumento nas Vendas</span>
                 <span class="block mt-1 text-gray-200">Ajudamos nossos clientes a melhorar suas vendas através de estratégias eficazes de marketing digital.</span>
@@ -336,7 +312,7 @@ p {
 
             <!-- Aba 2: Satisfação e Reconhecimento -->
             <button type="button" class="tab-button text-start hover:bg-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:ring-opacity-0 p-5 md:p-6 rounded-xl transition-all duration-300 ease-in-out"
-                    id="tabs-with-card-item-2" aria-selected="false" data-hs-tab="#tabs-with-card-2" aria-controls="tabs-with-card-2" role="tab">
+                    id="tabs-with-card-item-2" aria-selected="false" data-hs-tab="#tabs-with-card-2" aria-controls="tabs-with-card-2" role="tab" onclick="toggleTab(2)">
               <span class="grow">
                 <span class="block text-lg font-semibold text-gray-800 hover:text-blue-600 transition-all duration-300 ease-in-out">Satisfação e Reconhecimento</span>
                 <span class="block mt-1 text-gray-200">Clientes satisfeitos são nosso maior reconhecimento. Veja como conseguimos transformar negócios.</span>
@@ -345,7 +321,7 @@ p {
 
             <!-- Aba 3: Gestão de Tráfego Pago -->
             <button type="button" class="tab-button text-start hover:bg-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:ring-opacity-50 p-5 md:p-6 rounded-xl transition-all duration-300 ease-in-out"
-                    id="tabs-with-card-item-3" aria-selected="false" data-hs-tab="#tabs-with-card-3" aria-controls="tabs-with-card-3" role="tab">
+                    id="tabs-with-card-item-3" aria-selected="false" data-hs-tab="#tabs-with-card-3" aria-controls="tabs-with-card-3" role="tab" onclick="toggleTab(3)">
               <span class="grow">
                 <span class="block text-lg font-semibold text-gray-800 hover:text-blue-600 transition-all duration-300 ease-in-out">Gestão de Tráfego Pago</span>
                 <span class="block mt-1 text-gray-200">A estratégia de tráfego pago foi a chave para o sucesso de muitos de nossos clientes.</span>
@@ -361,7 +337,7 @@ p {
             <!-- Conteúdo das Abas -->
             <div>
               <!-- Aba 1 -->
-              <div id="tabs-with-card-1" role="tabpanel" aria-labelledby="tabs-with-card-item-1">
+              <div id="tabs-with-card-1" role="tabpanel" aria-labelledby="tabs-with-card-item-1" class="video-tab">
                 <video class="shadow-xl shadow-gray-200 rounded-xl w-full" controls>
                   <source src="../assets/videos/depoimento1.mov" type="video/mp4">
                   Seu navegador não suporta o vídeo.
@@ -369,7 +345,7 @@ p {
               </div>
 
               <!-- Aba 2 -->
-              <div id="tabs-with-card-2" class="hidden" role="tabpanel" aria-labelledby="tabs-with-card-item-2">
+              <div id="tabs-with-card-2" class="hidden video-tab" role="tabpanel" aria-labelledby="tabs-with-card-item-2">
                 <video class="shadow-xl shadow-gray-200 rounded-xl w-full" controls>
                   <source src="../assets/videos/depoimento2.mov" type="video/mp4">
                   Seu navegador não suporta o vídeo.
@@ -377,7 +353,7 @@ p {
               </div>
 
               <!-- Aba 3 -->
-              <div id="tabs-with-card-3" class="hidden" role="tabpanel" aria-labelledby="tabs-with-card-item-3">
+              <div id="tabs-with-card-3" class="hidden video-tab" role="tabpanel" aria-labelledby="tabs-with-card-item-3">
                 <video class="shadow-xl shadow-gray-200 rounded-xl w-full" controls>
                   <source src="../assets/videos/depoimento3.mp4" type="video/mp4">
                   Seu navegador não suporta o vídeo.
@@ -397,19 +373,22 @@ p {
 </section>
 
 
- <!-- Botão Flutuante WhatsApp -->
-    <a href="https://api.whatsapp.com/send/?phone=5519981331191&text&type=phone_number&app_absent=0" target="_blank" class="wpp-btn">
-        <img src="../img/wpp-icon.svg" alt="WhatsApp">
-    </a>
-
-
+<!-- Botão Flutuante WhatsApp -->
+<a href="https://api.whatsapp.com/send/?phone=5519981331191&text&type=phone_number&app_absent=0" target="_blank" class="wpp-btn">
+    <img src="../img/wpp-icon.svg" alt="WhatsApp">
+</a>
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-10">
-      <h1 class="sm:text-4x1 text-3xl font-bold title-font mb-4 text-gray-900">Clientes que Transformaram Seus Negócios com a LSG Digital</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Veja como nossos clientes estão alcançando novos patamares de sucesso com a LSG Digital, a força por trás do seu crescimento!</p>
+      <h1 class="sm:text-4xl text-3xl font-bold title-font mb-4 text-gray-900">
+        Clientes que Transformaram Seus Negócios com a LSG Digital
+      </h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+        Veja como nossos clientes estão alcançando novos patamares de sucesso com a LSG Digital, a força por trás do seu crescimento!
+      </p>
     </div>
     <div class="flex flex-wrap -m-2">
+      <!-- Cliente 1 -->
       <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg hover:shadow-xl transition-all duration-300">
           <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../img/Instagram-clientes/luizgoncalvesconnection.jpg">
@@ -419,6 +398,7 @@ p {
           </div>
         </div>
       </div>
+      <!-- Cliente 2 -->
       <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg hover:shadow-xl transition-all duration-300">
           <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../img/Instagram-clientes/novo_olhar_revelesuabeleza.jpg">
@@ -428,6 +408,7 @@ p {
           </div>
         </div>
       </div>
+      <!-- Cliente 3 -->
       <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg hover:shadow-xl transition-all duration-300">
           <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../img/Instagram-clientes/dconceptbr.jpg">
@@ -437,6 +418,7 @@ p {
           </div>
         </div>
       </div>
+      <!-- Cliente 4 -->
       <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg hover:shadow-xl transition-all duration-300">
           <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../img/Instagram-clientes/casavrsalao.jpg">
@@ -446,6 +428,7 @@ p {
           </div>
         </div>
       </div>
+      <!-- Cliente 5 -->
       <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg hover:shadow-xl transition-all duration-300">
           <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../img/Instagram-clientes/Floya.jpg">
@@ -455,6 +438,7 @@ p {
           </div>
         </div>
       </div>
+      <!-- Cliente 6 -->
       <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg hover:shadow-xl transition-all duration-300">
           <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../img/Instagram-clientes/amovacinasoficial.jpg">
@@ -464,6 +448,7 @@ p {
           </div>
         </div>
       </div>
+      <!-- Cliente 7 -->
       <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg hover:shadow-xl transition-all duration-300">
           <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../img/Instagram-clientes/inbeautyluxury.jpg">
@@ -477,24 +462,26 @@ p {
   </div>
 </section>
 
-<!-- Botão flutuante com notificação -->
-<div class="floating-btn" id="floating-btn">
+<section>
+  <!-- Botão flutuante com notificação -->
+  <div class="floating-btn" id="floating-btn">
     🎁
     <span class="notification-count" id="notification-count">1</span>
-</div>
+  </div>
 
-<!-- Modal de Brinde -->
-<div class="brinde-modal" id="brinde-modal">
+  <!-- Modal de Brinde -->
+  <div class="brinde-modal" id="brinde-modal">
     <div class="modal-content">
-        <h3 class="title">Parabéns!</h3>
-        <p class="offer-text">Você ganhou um <span class="highlight">diagnóstico gratuito</span> no valor de <span class="price">R$ 399,90</span>!</p>
-        <p class="instructions">Preencha o formulário para garantir sua oferta e aproveite o brinde exclusivo!</p>
-        <div class="modal-buttons">
-            <button class="close-btn" id="close-btn">Fechar</button>
-            <a href="../pages/brinds/formulario-brinde.html" class="get-btn">Pegar Brinde</a>
-        </div>
+      <h3 class="title">Parabéns!</h3>
+      <p class="offer-text">Você ganhou um <span class="highlight">diagnóstico gratuito</span> no valor de <span class="price">R$ 399,90</span>!</p>
+      <p class="instructions">Preencha o formulário para garantir sua oferta e aproveite o brinde exclusivo!</p>
+      <div class="modal-buttons">
+        <button class="close-btn" id="close-btn">Fechar</button>
+        <a href="../pages/brinds/./brinds/form.contato.html" class="get-btn">Pegar Brinde</a>
+      </div>
     </div>
-</div>
+  </div>
+</section>
 
 
 
@@ -643,89 +630,58 @@ p {
   </div>
 </section>
 <!-- ========== FIM ========== -->
-<section>
-  <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
-      <div class="relative z-10">
-        <div class="max-w-lg md:max-w-none">
-          <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
-            Transforme sua presença digital
-          </h2>
 
-          <p class="mt-4 text-lg text-gray-700">
-            A solução que você precisa está a apenas um clique de distância!
-          </p>
+<section class="py-8 bg-gray-50">
+  <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16">
+      <!-- Texto e CTA -->
+      <div class="relative z-10 space-y-6">
+        <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl leading-tight">
+          Transforme sua presença digital
+        </h2>
+        <p class="text-lg text-gray-700">
+          A solução que você precisa está a apenas um clique de distância!
+        </p>
 
-          <button 
-            class="cta mt-6 flex items-center justify-center px-6 py-6 rounded-lg bg-orange-600 text-white font-semibold hover:bg-orange-700 transition duration-300 transform hover:scale-105 shadow-lg"
-            onclick="window.location.href='https://api.whatsapp.com/send/?phone=5519981331191&text&type=phone_number&app_absent=0'">
-            <span class="span text-sm mr-2"> Conversar AGORA</span>
-            <span class="second">
-              <svg
-                width="30px"
-                height="20px"
-                viewBox="0 0 66 43"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <path
-                    class="one"
-                    d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
-                    fill="#FFFFFF"
-                  ></path>
-                </g>
-              </svg>
-            </span>
-          </button>
-        </div>
+        <button 
+          class="cta flex items-center justify-center px-8 py-4 rounded-lg bg-orange-600 text-white font-semibold hover:bg-orange-700 transition duration-300 transform hover:scale-105 shadow-xl"
+          onclick="window.location.href='https://api.whatsapp.com/send/?phone=5519981331191&text&type=phone_number&app_absent=0'">
+          <span class="text-sm mr-2">CONVERSAR AGORA</span>
+          <span>
+            <svg width="30" height="20" viewBox="0 0 66 43" xmlns="http://www.w3.org/2000/svg" fill="none">
+              <path d="M40.154,3.895 L43.976,0.139 C44.171,-0.052 44.483,-0.052 44.677,0.139 L65.692,20.785 C66.086,21.172 66.091,21.805 65.704,22.199 L65.692,22.211 L44.677,42.861 C44.483,43.052 44.171,43.052 43.976,42.861 L40.154,39.107 C39.958,38.913 39.955,38.597 40.148,38.4 L56.994,21.857 C57.191,21.663 57.194,21.347 57.000,21.15 L56.994,21.143 L40.154,4.608 C39.957,4.415 39.954,4.098 40.148,3.901 L40.154,3.895 Z" fill="#FFF"></path>
+            </svg>
+          </span>
+        </button>
       </div>
 
+      <!-- Imagem -->
       <div class="image-container">
-        <img src="../img/fundos/4.jpeg" class="rounded-lg shadow-xl transform transition-all hover:scale-105 duration-300" alt="Imagem de fundo" />
+        <img src="../img/fundos/15.jpeg" class="rounded-lg shadow-xl transform transition-all hover:scale-105 duration-300" alt="Imagem de fundo" />
       </div>
     </div>
   </div>
 </section>
 
- 
-
- <section class="text-gray-600 body-font bg-black">
-   <div class="relative">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="#FFFFFFFF"><path d="M1000 100C500 100 500 64 0 64V0h1000v100Z" opacity=".5"></path><path d="M1000 100C500 100 500 34 0 34V0h1000v100Z" opacity=".5"></path><path d="M1000 100C500 100 500 4 0 4V0h1000v100Z"></path></svg>
+<section class="text-gray-600 body-font bg-black">
+  <div class="relative">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="#FFFFFFFF">
+      <path d="M1000 100C500 100 500 64 0 64V0h1000v100Z" opacity=".5"></path>
+      <path d="M1000 100C500 100 500 34 0 34V0h1000v100Z" opacity=".5"></path>
+      <path d="M1000 100C500 100 500 4 0 4V0h1000v100Z"></path>
+    </svg>
   </div>
   <div class="container px-5 py-24 mx-auto">
     <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
-      <h1 class="flex-grow sm:pr-10 text-2xl font-medium title-font text-white ">
+      <h1 class="flex-grow sm:pr-10 text-2xl font-medium title-font text-white">
         Pronto para Alcançar Seus Próprios Resultados?
       </h1>
-
-      <button class="cta flex items-center justify-center px-6 py-6 rounded-lg bg-orange-600 text-white font-semibold hover:bg-orange-700 transition duration-300">
-        <span class="span text-sm mr-2">Fale Conosco</span>
-        <span class="second">
-          <svg
-            width="30px"
-            height="20px"
-            viewBox="0 0 66 43"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
+      <button class="cta flex items-center justify-center px-6 py-3 rounded-lg bg-orange-600 text-white font-semibold hover:bg-orange-700 transition duration-300">
+        <span class="text-sm mr-2">Fale Conosco</span>
+        <span>
+          <svg width="30px" height="20px" viewBox="0 0 66 43" xmlns="http://www.w3.org/2000/svg">
             <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <path
-                class="one"
-                d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
-                fill="#FFFFFF"
-              ></path>
-              <path
-                class="two"
-                d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
-                fill="#FFFFFF"
-              ></path>
-              <path
-                class="three"
-                d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
-                fill="#FFFFFF"
-              ></path>
+              <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
             </g>
           </svg>
         </span>
@@ -735,73 +691,60 @@ p {
 </section>
 
 <footer class="bg-black text-white body-font">
-  <div class="container px-5 py-16 mx-auto flex md:items-center lg:items-start md:flex-row flex-wrap flex-col">
-    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-      <a class="flex title-font font-medium items-center justify-center text-white">
-        <img src="../img/logo-clara.png" alt="Logo LSG Digital" class="w-32 h-auto" />
-      </a>
+ <div class="container px-5 py-16 mx-auto flex md:items-center lg:items-start md:flex-row flex-wrap flex-col">
+  <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+    <a class="flex title-font font-medium items-center justify-center text-white">
+      <img src="../img/logo-clara.png" alt="Logo LSG Digital" class="w-32 h-auto" />
+    </a>
+  </div>
+
+  <div class="flex-grow flex flex-wrap md:pl-20 mb-10 md:mt-0 mt-5 md:text-left text-center">
+    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+      <h2 class="text-lg font-medium text-white tracking-widest mb-3">EMPRESA</h2>
+      <nav class="list-none mb-10">
+        <li><a class="text-gray-400 hover:text-indigo-500" href="../pages/home.html">Sobre Nós</a></li>
+        <li><a class="text-gray-400 hover:text-indigo-500" href="../pages/clientes.html">Depoimentos </a></li>
+        <li><a class="text-gray-400 hover:text-indigo-500" href="#avaliaçoes">Avaliações</a></li>
+        <li><a class="text-gray-400 hover:text-indigo-500" href="../pages/servicos.html">Serviços</a></li>
+      </nav>
     </div>
 
-    <div class="flex-grow flex flex-wrap md:pl-20 mb-10 md:mt-0 mt-5 md:text-left text-center">
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="text-lg font-medium text-white tracking-widest mb-3">CATEGORIAS</h2>
-        <nav class="list-none mb-10">
-          <li><a class="text-gray-400 hover:text-indigo-500" href="#">Consultoria Digital</a></li>
-          <li><a class="text-gray-400 hover:text-indigo-500" href="#">Gestão de Redes Sociais</a></li>
-          <li><a class="text-gray-400 hover:text-indigo-500" href="#">Automação de Marketing</a></li>
-          <li><a class="text-gray-400 hover:text-indigo-500" href="#">Campanhas Publicitárias</a></li>
-        </nav>
-      </div>
+    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+      <h2 class="text-lg font-medium text-white tracking-widest mb-3">CONTATO</h2>
+      <nav class="list-none mb-10">
+        <li><a class="text-gray-400 hover:text-indigo-500" href="./brinds/form.contato.html">E-mail</a></li>
+        <li><a class="text-gray-400 hover:text-indigo-500" href="./brinds/form.contato.html">Telefone</a></li>
+      </nav>
+    </div>
 
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="text-lg font-medium text-white tracking-widest mb-3">EMPRESA</h2>
-        <nav class="list-none mb-10">
-          <li><a class="text-gray-400 hover:text-indigo-500" href="#">Sobre Nós</a></li>
-          <li><a class="text-gray-400 hover:text-indigo-500" href="#">Carreiras</a></li>
-          <li><a class="text-gray-400 hover:text-indigo-500" href="#">Política de Privacidade</a></li>
-          <li><a class="text-gray-400 hover:text-indigo-500" href="#">Termos e Condições</a></li>
-        </nav>
-      </div>
-
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="text-lg font-medium text-white tracking-widest mb-3">CONTATO</h2>
-        <nav class="list-none mb-10">
-          <li><a class="text-gray-400 hover:text-indigo-500" href="mailto:contato@lsgdigital.com.br">E-mail</a></li>
-          <li><a class="text-gray-400 hover:text-indigo-500" href="tel:+551134567890">Telefone</a></li>
-          <li><a class="text-gray-400 hover:text-indigo-500" href="#">Endereço</a></li>
-          <li><a class="text-gray-400 hover:text-indigo-500" href="#">Suporte</a></li>
-        </nav>
-      </div>
-
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
-        <h2 class="text-lg font-medium text-white tracking-widest mb-3">SIGA-NOS</h2>
-        <div class="flex justify-center md:justify-start space-x-4">
-          <a href="https://www.facebook.com/lsgdigital" class="text-gray-400 hover:text-indigo-500">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-            </svg>
-          </a>
-          <a href="https://twitter.com/lsgdigital" class="text-gray-400 hover:text-indigo-500">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-            </svg>
-          </a>
-          <a href="https://www.instagram.com/lsgdigital" class="text-gray-400 hover:text-indigo-500">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/company/lsgdigital" class="text-gray-400 hover:text-indigo-500">
-            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-              <circle cx="4" cy="4" r="2" stroke="none"></circle>
-            </svg>
-          </a>
-        </div>
+    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+      <h2 class="text-lg font-medium text-white tracking-widest mb-3">SIGA-NOS</h2>
+      <div class="flex justify-center md:justify-start space-x-4">
+        <a href="https://www.facebook.com/lsgdigital" class="text-gray-400 hover:text-indigo-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a href="https://twitter.com/lsgdigital" class="text-gray-400 hover:text-indigo-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/lsgdigital" class="text-gray-400 hover:text-indigo-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/company/lsgdigital" class="text-gray-400 hover:text-indigo-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M4.98 3C3.89 3 3 3.89 3 4.98v14.04c0 1.09.89 1.98 1.98 1.98h14.04c1.09 0 1.98-.89 1.98-1.98V4.98c0-1.09-.89-1.98-1.98-1.98H4.98zm6.99 13.87h-2.1v-6.96h2.1v6.96zm-1.05-8.09c-.67 0-1.13-.45-1.13-1.01 0-.58.45-1.02 1.13-1.02.68 0 1.13.44 1.13 1.02 0 .56-.45 1.01-1.13 1.01zm7.26 8.09h-2.1v-3.47c0-.88-.31-1.48-.91-1.48-.5 0-.79.34-.92.67-.05.12-.06.3-.06.47v3.81h-2.1v-6.96h2.1v.94c.28-.41.69-.94 1.74-.94 1.27 0 2.22.83 2.22 2.64v3.51z"></path>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
+</div>
 </footer>
 
 <script>

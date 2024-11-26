@@ -18,7 +18,7 @@
   border-radius: 4px; /* Arredondamento dos cantos */
   border: 2px solid #f96400; /* Cor da borda (laranja do site) */
   background-color: #f96400; /* Cor de fundo inicial (laranja do site) */
-  color: #ffebe5; /* Cor do texto */
+  color: #fff; /* Cor do texto */
   cursor: pointer; /* Aponta que é clicável */
   transition: all 0.3s ease; /* Transição suave para os efeitos de hover e focus */
   margin-top: 1rem;
@@ -29,7 +29,7 @@
             bottom: 20px; /* Distância do fundo da tela */
             right: 20px; /* Distância da lateral direita */
             background-color: #25d366; /* Cor do WhatsApp */
-            color: #ffebe5;
+            color: #fff;
             border-radius: 50%; /* Forma arredondada */
             width: 60px; /* Tamanho do botão */
             height: 60px; /* Tamanho do botão */
@@ -90,7 +90,7 @@
             bottom: 20px; /* Distância do fundo da tela */
             right: 20px; /* Distância da lateral direita */
             background-color: #007bff; /* Cor do botão */
-            color: #ffebe5;
+            color: #fff;
             border-radius: 50%; /* Forma arredondada */
             width: 60px; /* Tamanho do botão */
             height: 60px; /* Tamanho do botão */
@@ -114,7 +114,7 @@
             content: "↑"; /* Símbolo de seta para cima */
             font-size: 30px; /* Tamanho da seta */
             font-weight: bold;
-            color: #ffebe5;
+            color: #fff;
         }
 
         /* Animação para o botão (efeito de flutuação) */
@@ -163,7 +163,7 @@
         border-radius: 4px; /* Arredondamento dos cantos */
         border: 2px solid #f96400; /* Cor da borda (laranja do site) */
         background-color: #f96400; /* Cor de fundo inicial (laranja do site) */
-        color: #ffebe5; /* Cor do texto */
+        color: #fff; /* Cor do texto */
         cursor: pointer; /* Aponta que é clicável */
         transition: all 0.3s ease; /* Transição suave para os efeitos de hover e focus */
         margin-top: 1rem;
@@ -317,8 +317,8 @@
         padding: 11px 33px;
         text-decoration: none;
         font-size: 25px;
-        color: #ffebe5;
-        background: #2C2C2CFF;
+        color: #e0e0e0;
+        background: #000;
         transition: 1s;
         box-shadow: 6px 6px 0 black;
         transform: skewX(-15deg);
@@ -383,7 +383,7 @@
 
       @keyframes color_anim {
         0% {
-          fill: #ffebe5;
+          fill: #fff;
         }
 
         50% {
@@ -391,7 +391,7 @@
         }
 
         100% {
-          fill: #ffebe5;
+          fill: #ffffff;
         }
       }
 /* Estilo base do link */
